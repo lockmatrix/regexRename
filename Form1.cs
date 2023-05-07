@@ -174,6 +174,8 @@ namespace regexRename
                         newNameList[i] = fileList[i].Directory + "\\" + name.Replace(pattern, replaceStr) + extensionName;
                 }
 
+                newNameList[i] = newNameList[i].Replace("{INDEX}", (i + 1).ToString("D3"));
+
                 if (!fileList[i].FullName.Equals(newNameList[i], StringComparison.OrdinalIgnoreCase) && File.Exists(newNameList[i]))
                     nowState[i] = 3;
                 else if (fileList[i].IsReadOnly)

@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.oldName = new System.Windows.Forms.ColumnHeader();
-            this.newName = new System.Windows.Forms.ColumnHeader();
-            this.info = new System.Windows.Forms.ColumnHeader();
+            this.oldName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.newName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.info = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.checkBox_ShowDir = new System.Windows.Forms.CheckBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,6 +55,8 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -138,7 +140,7 @@
             // button_rename
             // 
             this.button_rename.Enabled = false;
-            this.button_rename.Location = new System.Drawing.Point(564, 346);
+            this.button_rename.Location = new System.Drawing.Point(564, 368);
             this.button_rename.Name = "button_rename";
             this.button_rename.Size = new System.Drawing.Size(99, 39);
             this.button_rename.TabIndex = 6;
@@ -191,7 +193,7 @@
             // 
             // button_test
             // 
-            this.button_test.Location = new System.Drawing.Point(439, 346);
+            this.button_test.Location = new System.Drawing.Point(439, 368);
             this.button_test.Name = "button_test";
             this.button_test.Size = new System.Drawing.Size(106, 39);
             this.button_test.TabIndex = 11;
@@ -245,7 +247,7 @@
             this.checkBox_IncludePath.TabIndex = 15;
             this.checkBox_IncludePath.Text = "路径参与匹配(慎用)";
             this.toolTip1.SetToolTip(this.checkBox_IncludePath, "选中时路径名会参与匹配与替换。\r\n如果替换后的路径不在原目录，文件会被移动到新目录，如果新目录不存在，程序会自动建立新目录。\r\n标记慎用是因为此命令容易被误用，除" +
-                    "非你确实需要此功能，否则请不要选此项。");
+        "非你确实需要此功能，否则请不要选此项。");
             this.checkBox_IncludePath.UseVisualStyleBackColor = true;
             this.checkBox_IncludePath.CheckedChanged += new System.EventHandler(this.checkBox_IncludePath_CheckedChanged);
             // 
@@ -311,12 +313,32 @@
             this.label5.TabIndex = 20;
             this.label5.Text = "请把要改名的文件(夹)用鼠标拖入下面的窗口：";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(440, 325);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(155, 12);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "记得在模式中增加 () Group";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(440, 346);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(179, 12);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "{INDEX} 用于生成001开始的序号";
+            // 
             // Form1
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(688, 446);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -379,7 +401,8 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label label5;
-
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 
