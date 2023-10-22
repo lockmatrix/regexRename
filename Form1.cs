@@ -298,5 +298,15 @@ namespace regexRename
             button_rename.Enabled = false;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fileList.Clear();
+            newNameList.Clear();
+            nowState.Clear();
+            button_rename.Enabled = false;
+            ShowFileList();
+            textBox1.Text = "";
+            textBox2.Text = "";
+        }
     }
 }

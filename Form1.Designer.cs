@@ -57,6 +57,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +73,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(12, 24);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(664, 244);
+            this.listView1.Size = new System.Drawing.Size(932, 329);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -80,12 +81,12 @@
             // oldName
             // 
             this.oldName.Text = "原文件名";
-            this.oldName.Width = 260;
+            this.oldName.Width = 396;
             // 
             // newName
             // 
             this.newName.Text = "目标文件名";
-            this.newName.Width = 260;
+            this.newName.Width = 357;
             // 
             // info
             // 
@@ -95,7 +96,7 @@
             // checkBox_ShowDir
             // 
             this.checkBox_ShowDir.AutoSize = true;
-            this.checkBox_ShowDir.Location = new System.Drawing.Point(28, 278);
+            this.checkBox_ShowDir.Location = new System.Drawing.Point(38, 363);
             this.checkBox_ShowDir.Name = "checkBox_ShowDir";
             this.checkBox_ShowDir.Size = new System.Drawing.Size(72, 16);
             this.checkBox_ShowDir.TabIndex = 1;
@@ -105,16 +106,16 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(109, 343);
+            this.textBox1.Location = new System.Drawing.Point(119, 428);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(297, 21);
+            this.textBox1.Size = new System.Drawing.Size(443, 21);
             this.textBox1.TabIndex = 2;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 346);
+            this.label1.Location = new System.Drawing.Point(36, 431);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 12);
             this.label1.TabIndex = 3;
@@ -123,7 +124,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 373);
+            this.label2.Location = new System.Drawing.Point(48, 458);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 12);
             this.label2.TabIndex = 4;
@@ -131,16 +132,16 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(109, 370);
+            this.textBox2.Location = new System.Drawing.Point(119, 455);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(297, 21);
+            this.textBox2.Size = new System.Drawing.Size(443, 21);
             this.textBox2.TabIndex = 5;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button_rename
             // 
             this.button_rename.Enabled = false;
-            this.button_rename.Location = new System.Drawing.Point(564, 368);
+            this.button_rename.Location = new System.Drawing.Point(734, 457);
             this.button_rename.Name = "button_rename";
             this.button_rename.Size = new System.Drawing.Size(99, 39);
             this.button_rename.TabIndex = 6;
@@ -150,7 +151,7 @@
             // 
             // button_clearAll
             // 
-            this.button_clearAll.Location = new System.Drawing.Point(439, 274);
+            this.button_clearAll.Location = new System.Drawing.Point(609, 363);
             this.button_clearAll.Name = "button_clearAll";
             this.button_clearAll.Size = new System.Drawing.Size(75, 23);
             this.button_clearAll.TabIndex = 7;
@@ -160,7 +161,7 @@
             // 
             // button_clearSuccessful
             // 
-            this.button_clearSuccessful.Location = new System.Drawing.Point(520, 274);
+            this.button_clearSuccessful.Location = new System.Drawing.Point(690, 363);
             this.button_clearSuccessful.Name = "button_clearSuccessful";
             this.button_clearSuccessful.Size = new System.Drawing.Size(75, 23);
             this.button_clearSuccessful.TabIndex = 8;
@@ -170,7 +171,7 @@
             // 
             // button_clearFailed
             // 
-            this.button_clearFailed.Location = new System.Drawing.Point(601, 274);
+            this.button_clearFailed.Location = new System.Drawing.Point(771, 363);
             this.button_clearFailed.Name = "button_clearFailed";
             this.button_clearFailed.Size = new System.Drawing.Size(75, 23);
             this.button_clearFailed.TabIndex = 9;
@@ -183,7 +184,7 @@
             this.checkBox_includeSubFiles.AutoSize = true;
             this.checkBox_includeSubFiles.Checked = true;
             this.checkBox_includeSubFiles.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_includeSubFiles.Location = new System.Drawing.Point(109, 311);
+            this.checkBox_includeSubFiles.Location = new System.Drawing.Point(119, 396);
             this.checkBox_includeSubFiles.Name = "checkBox_includeSubFiles";
             this.checkBox_includeSubFiles.Size = new System.Drawing.Size(132, 16);
             this.checkBox_includeSubFiles.TabIndex = 10;
@@ -193,7 +194,7 @@
             // 
             // button_test
             // 
-            this.button_test.Location = new System.Drawing.Point(439, 368);
+            this.button_test.Location = new System.Drawing.Point(609, 457);
             this.button_test.Name = "button_test";
             this.button_test.Size = new System.Drawing.Size(106, 39);
             this.button_test.TabIndex = 11;
@@ -206,9 +207,9 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 424);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 518);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(688, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(967, 22);
             this.statusStrip1.TabIndex = 12;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -220,7 +221,7 @@
             // checkBox_includeExtensionName
             // 
             this.checkBox_includeExtensionName.AutoSize = true;
-            this.checkBox_includeExtensionName.Location = new System.Drawing.Point(118, 278);
+            this.checkBox_includeExtensionName.Location = new System.Drawing.Point(128, 363);
             this.checkBox_includeExtensionName.Name = "checkBox_includeExtensionName";
             this.checkBox_includeExtensionName.Size = new System.Drawing.Size(108, 16);
             this.checkBox_includeExtensionName.TabIndex = 13;
@@ -232,7 +233,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 312);
+            this.label3.Location = new System.Drawing.Point(36, 397);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 12);
             this.label3.TabIndex = 14;
@@ -241,7 +242,7 @@
             // checkBox_IncludePath
             // 
             this.checkBox_IncludePath.AutoSize = true;
-            this.checkBox_IncludePath.Location = new System.Drawing.Point(251, 278);
+            this.checkBox_IncludePath.Location = new System.Drawing.Point(261, 363);
             this.checkBox_IncludePath.Name = "checkBox_IncludePath";
             this.checkBox_IncludePath.Size = new System.Drawing.Size(132, 16);
             this.checkBox_IncludePath.TabIndex = 15;
@@ -254,7 +255,7 @@
             // checkBox_includeDir
             // 
             this.checkBox_includeDir.AutoSize = true;
-            this.checkBox_includeDir.Location = new System.Drawing.Point(251, 311);
+            this.checkBox_includeDir.Location = new System.Drawing.Point(261, 396);
             this.checkBox_includeDir.Name = "checkBox_includeDir";
             this.checkBox_includeDir.Size = new System.Drawing.Size(84, 16);
             this.checkBox_includeDir.TabIndex = 16;
@@ -265,7 +266,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 399);
+            this.label4.Location = new System.Drawing.Point(24, 484);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 12);
             this.label4.TabIndex = 17;
@@ -275,7 +276,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(118, 399);
+            this.radioButton1.Location = new System.Drawing.Point(128, 484);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(83, 16);
             this.radioButton1.TabIndex = 18;
@@ -289,7 +290,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(240, 399);
+            this.radioButton2.Location = new System.Drawing.Point(250, 484);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(59, 16);
             this.radioButton2.TabIndex = 19;
@@ -316,7 +317,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(440, 325);
+            this.label6.Location = new System.Drawing.Point(610, 414);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(155, 12);
             this.label6.TabIndex = 21;
@@ -325,18 +326,29 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(440, 346);
+            this.label7.Location = new System.Drawing.Point(610, 435);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(179, 12);
             this.label7.TabIndex = 22;
             this.label7.Text = "{INDEX} 用于生成001开始的序号";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(852, 363);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 46);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "重置列表和模式";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(688, 446);
+            this.ClientSize = new System.Drawing.Size(967, 540);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -403,6 +415,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button1;
     }
 }
 
